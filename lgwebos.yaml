@@ -1,0 +1,75 @@
+type: 'custom:mini-media-player'
+entity: media_player.tv_lg_7100
+hide:
+  power_state: false
+hide_controls: true
+idle_view: true
+shortcuts:
+  buttons:
+    - icon: 'mdi:netflix'
+      id: Netflix
+      name: Netflix
+      type: source
+    - icon: 'mdi:amazon'
+      id: Amazon Prime Video
+      name: Amazon Prime Video
+      type: source
+    - icon: 'mdi:youtube-tv'
+      id: YouTube
+      name: YouTube TV
+      type: source
+    - data:
+        button: HOME
+        entity_id: media_player.tv_lg_7100
+      id: webostv.button
+      name: Menu
+      type: service
+    - data:
+        button: UP
+        entity_id: media_player.tv_lg_7100
+      icon: 'mdi:arrow-up-bold'
+      id: webostv.button
+      type: service
+    - data:
+        button: CHANNELUP
+        entity_id: media_player.tv_lg_7100
+      icon: 'mdi:arrow-up-drop-circle'
+      id: webostv.button
+      type: service
+    - data:
+        button: LEFT
+        entity_id: media_player.tv_lg_7100
+      icon: 'mdi:arrow-left-bold'
+      id: webostv.button
+      type: service
+    - data:
+        button: ENTER
+        entity_id: media_player.tv_lg_7100
+      id: webostv.button
+      name: Enter
+      type: service
+    - data:
+        button: RIGHT
+        entity_id: media_player.tv_lg_7100
+      icon: 'mdi:arrow-right-bold'
+      id: webostv.button
+      type: service
+    - data:
+        button: BACK
+        entity_id: media_player.tv_lg_7100
+      id: webostv.button
+      name: Back
+      type: service
+    - data:
+        button: DOWN
+        entity_id: media_player.tv_lg_7100
+      icon: 'mdi:arrow-down-bold'
+      id: webostv.button
+      type: service
+    - data:
+        button: CHANNELUP
+        entity_id: media_player.tv_lg_7100
+      icon: 'mdi:arrow-down-drop-circle'
+      id: webostv.button
+      type: service
+  columns: 3
